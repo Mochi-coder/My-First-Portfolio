@@ -1,0 +1,93 @@
+:root {
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.heroBanner {
+  margin: 0px 5%;
+  min-height: 200px;
+  height: 50vh;
+  background-image: url("../images/02-hero-bg.jpg");
+}
+
+#workGrid {
+  margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 300px 300px 300px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+  "prework prework"
+  "challengeOne challengeThree"
+  "challengeFour challengeFive";
+}
+
+.workGridArea {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 5px;
+  cursor: pointer;
+  display: grid;
+  align-content: end;
+}
+
+#prework {
+  grid-area: prework;
+  background-image: url("../images/02-portfolio-1.jpg");
+}
+
+#challengeOne {
+  grid-area: challengeOne;
+  background-image: url("../images/02-portfolio-2.jpg");
+}
+
+#challengeThree {
+  grid-area: challengeThree;
+  background-image: url("../images/02-portfolio-3.jpg");
+}
+
+#challengeFour {
+  grid-area: challengeFour;
+  background-image: url("../images/02-portfolio-4.jpg");
+}
+
+#challengeFive {
+  grid-area: challengeFive;
+  background-image: url("../images/02-run-buddy.jpg");
+}
+
+body {
+  margin: auto;
+  padding: 20px;
+  font-family:  Arial, Helvetica, sans-serif
+}
+
+#navBar {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 5%;
+}
+
+#navBar h1 {
+  width: 80%;
+  font-weight: 800;
+}
+
+#navigation {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+#navigation p {
+  cursor: pointer;
+  text-decoration-color: blueviolet;
+}
+
+p {
+  margin: 0;
+}
