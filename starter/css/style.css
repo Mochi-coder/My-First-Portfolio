@@ -22,8 +22,6 @@
   float:left;
   margin: auto;
   padding: 20px;
-  border-right: 10px;
-  border-color: blueviolet;
  }
 
  #selfie {
@@ -80,27 +78,32 @@
   grid-area: prework;
   background-image: url("../images/Prework.png");
   background-position: top;
+  text-decoration: none;
 }
 
 #Horiseon {
   grid-area: Horiseon;
   background-image: url("../images/Horiseon.png");
   background-position: top;
+  text-decoration: none;
 }
 
 #challengeThree {
   grid-area: challengeThree;
   background-image: url("../images/02-portfolio-3.jpg");
+  text-decoration: none;
 }
 
 #challengeFour {
   grid-area: challengeFour;
   background-image: url("../images/02-portfolio-4.jpg");
+  text-decoration: none;
 }
 
 #challengeFive {
   grid-area: challengeFive;
   background-image: url("../images/balloons.jpeg");
+  text-decoration: none;
 }
 
 
@@ -123,15 +126,9 @@ body {
   float: right;
 }
 
-  .highlight {
-    float:left;
-    color: floralwhite;
-    font-weight: 700;
-    font-family:sans-serif;    
-    font-size: 40px;
-    background-color: rgb(161, 24, 122);
-    padding: 10px;
-  }
+.navigation a:hover {
+  color: red;
+}
 
 .navigation a {
   color: antiquewhite;
@@ -141,8 +138,14 @@ body {
   font-size: 17px;
 }
 
-.navigation a:hover {
-  color: red;
+.highlight {
+  float:left;
+  color: floralwhite;
+  font-weight: 700;
+  font-family:sans-serif;    
+  font-size: 40px;
+  background-color: rgb(161, 24, 122);
+  padding: 10px;
 }
 
 h2 {
@@ -155,8 +158,6 @@ h2 {
 }
 
 h3 {
-  border-right: 30px;
-  border-color: teal;
   font-size: 30px;
   color: navy;
 }
@@ -167,9 +168,15 @@ h4, .workGridArea p {
     padding: 20px 0px;
     margin: 0px;
     color: white;
-  
 }
 
 h4 {
   font-size: 20px;
+}
+
+.linkedIn, .email, .github {
+  padding: 20px 40px;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
 }
