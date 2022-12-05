@@ -1,11 +1,3 @@
-:root {
-
-}
-
-* {
-  box-sizing: border-box;
-}
-
 .heroBanner {
   min-height: 100px;
   height: 30vh;
@@ -14,19 +6,60 @@
   background-size: cover;
 }
 
-.content {
+.mainGrid {
   margin: 0px 5%;
+  display: grid;
+  grid-template-rows: 30% 60% 10%;
+  grid-template-columns: 20% 80%;
+  grid-template-areas:
+  "aboutMe text1"
+  "work workGridArea"
+  "contact links";
 }
 
-#workGrid {
-  margin: 0px 5%;
+#aboutMe {
+  grid-area: aboutMe;
+  float:left;
+  margin: auto;
+  padding: 20px;
+  border-right: 10px;
+  border-color: blueviolet;
+ }
+
+ #selfie {
+  float: left;
+  padding: 20px;
+ }
+
+ #text1 {
+  grid-area: text1;
+ }
+
+ #work {
+  grid-area: work;
+ margin: auto;
+ padding: 20px;
+ }
+
+ #workGrid {
+  grid-area: workGrid;
+  margin: auto;
+  width: 1000px;
   display: grid;
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
   "prework prework"
-  "challengeOne challengeThree"
+  "Horiseon challengeThree"
   "challengeFour challengeFive";
+}
+
+#contact {
+  grid-area: contact;
+}
+
+#links {
+  grid-area: links;
 }
 
 .workGridArea {
@@ -36,17 +69,23 @@
   margin: 5px;
   cursor: pointer;
   display: grid;
-  align-content: end;
+  align-content: center;
+  border-radius: 10px;
+  border-style: ridge;
+  border-width: 5px;
+  border-color: teal;
 }
 
 #prework {
   grid-area: prework;
-  background-image: url("../images/02-portfolio-1.jpg");
+  background-image: url("../images/Prework.png");
+  background-position: top;
 }
 
-#challengeOne {
-  grid-area: challengeOne;
-  background-image: url("../images/02-portfolio-2.jpg");
+#Horiseon {
+  grid-area: Horiseon;
+  background-image: url("../images/Horiseon.png");
+  background-position: top;
 }
 
 #challengeThree {
@@ -61,8 +100,9 @@
 
 #challengeFive {
   grid-area: challengeFive;
-  background-image: url("../images/02-run-buddy.jpg");
+  background-image: url("../images/balloons.jpeg");
 }
+
 
 body {
   margin: auto;
@@ -121,7 +161,15 @@ h3 {
   color: navy;
 }
 
+h4, .workGridArea p {
+  background: rgb(0, 0, 0, 0.7);
+    width: 50%;
+    padding: 20px 0px;
+    margin: 0px;
+    color: white;
+  
+}
 
-.aboutMe {
-
+h4 {
+  font-size: 20px;
 }

@@ -13,6 +13,7 @@
 <header>
   <nav class="navBar">
     <i><h1 class="highlight">Lisa Luu</h1></i>
+    <img src="starter/images/selfie.jpeg" alt="image of me" id="selfie" width="80" height="100">
     <div class="navigation">
       <a href="#">About Me</a>
       <a href="#">My Work</a>
@@ -32,54 +33,51 @@
     </div>
   </section>
 
-  <main class="content">
+  <main id="mainGrid">
     <!-- about me -->
-    <section class="aboutMe" id="about">
-      <h3>About Me</h3>
-      <p>Hello! I'm Lisa, nice to meet you. I am currently based in Kent but have lived in London my whole life. This
+    <section id="about">
+      <h3 id="aboutMe">About Me</h3>
+      <p id="text1">
+        Hello! I'm Lisa, nice to meet you. I am currently based in Kent but have lived in London my whole life. This
         year, I've decided to take a different direction in my career. With no experience or background knowledge, I've
-        decided to dive into to coding/programming and joined the front-end web developer bootcamp! Bootcamp has only just begun,
-        but I am ready for this new
-        and exciting journey! Here's what I have accomplished so far...</p>
+        decided to join the front-end web developer bootcamp! Bootcamp has only just begun,
+        but I am ready for this new and exciting journey! Here's what I have accomplished so far...</p>
     </section>
 
     <!-- portfolio container -->
-    <h3>Work</h3>
-    <section id="workGrid">
+    <h3 id="work">Work</h3>
+    <section id="workGrid" class="grid">
       <div id="prework" class="workGridArea">
-        <div id="heading"></div>
         <h4>Prework</h4>
-        <p>HTML/CSS/JavaScript</p>
+          <p>HTML/CSS/JavaScript</p>
       </div>
-      <div id="challengeOne" class="workGridArea">
-        <div id="heading"></div>
-        <h4>Accessibility</h4>
-        <p>HTML/CSS</p>
+      <div id="Horiseon" class="workGridArea">
+        <h4>Horiseon</h4>
+          <p>HTML/CSS</p>
       </div>
       <div id="challengeThree" class="workGridArea">
-        <div id="heading"></div>
         <h4>New challenge!</h4>
-        <p>New things!</p>
+          <p>New things!</p>
       </div>
       <div id="challengeFour" class="workGridArea">
-        <div id="heading"></div>
         <h4>New challenge!</h4>
-        <p>Something new!</p>
+          <p>Something new!</p>
       </div>
       <div id="challengeFive" class="workGridArea">
-        <div id="heading"></div>
         <h4>New challenge!</h4>
-        <p>What I've learnt</p>
+          <p>What I've learnt</p>
       </div>
 
     </section>
 
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
-      LinkedIn
-      Email
-      Github
+    <section class="page-section contact">
+      <h3 id="contact">Contact Me</h3>
+      <ul id="links">
+        <li>LinkedIn</li>
+        <li>Email</li>
+        <li>Github</li>
+      </ul>
     </section>
   </main>
 </body>
