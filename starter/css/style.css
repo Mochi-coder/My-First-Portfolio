@@ -183,13 +183,56 @@ h3 {
   font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   color: navy;
+  font-size: 20px;
 }
 
 .footerLinks {
  display: flex;
+ flex-direction: row;
  text-align: left;
- justify-content: space-between;
+ justify-content: space-around;
  align-items: center;
- margin: 5%;
- padding: auto;
+ margin: 30px;
+}
+
+#contact {
+  float: left;
+  color: floralwhite;
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: 30px;
+  background-color: rgb(161, 24, 122);
+  padding: 40px; 
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  body {
+    display: block;
+    position: static;
+    border: auto;
+    width: fit-content;
+  }
+
+  header {
+    width:max-content;
+    position: static;
+    border: auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    display: block;
+    position: static;
+    border: auto;
+    width: fit-content;
+  }
+
+  header {
+    width: fit-content;
+    position: static;
+    border: auto;
+  }
 }
