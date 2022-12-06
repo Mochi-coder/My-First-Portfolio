@@ -1,9 +1,65 @@
+.navBar {
+  background-color: rgb(44, 8, 116);
+  overflow: hidden;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.highlight {
+  float: left;
+  color: floralwhite;
+  font-weight: 700;
+  font-family: sans-serif;
+  font-size: 40px;
+  background-color: rgb(161, 24, 122);
+  padding: 10px;
+}
+
+#selfie {
+  float: left;
+  margin-left: 0px;
+  margin-right: auto;
+  padding: 10px;
+}
+
+.navigation a:hover {
+  color: red;
+}
+
+.navigation a {
+  color: antiquewhite;
+  text-align: center;
+  padding: 50px 30px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+body {
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif
+}
+
 .heroBanner {
   min-height: 100px;
   height: 30vh;
   background-image: url("../images/confetti.jpeg");
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+h2 {
+  color: floralwhite;
+  font-size: 30px;
+  background-color: navy;
+  padding: 30px;
+  float: right;
+  margin-right: 50px;
 }
 
 .mainGrid {
@@ -12,34 +68,30 @@
   grid-template-rows: 30% 60% 10%;
   grid-template-columns: 20% 80%;
   grid-template-areas:
-  "aboutMe text1"
-  "work workGridArea"
-  "contact links";
+    "aboutMe text1"
+    "work workGrid"
+    "contact links";
 }
+
 
 #aboutMe {
   grid-area: aboutMe;
-  float:left;
+  float: left;
   margin: auto;
   padding: 20px;
- }
+}
 
- #selfie {
-  float: left;
-  padding: 20px;
- }
-
- #text1 {
+#text1 {
   grid-area: text1;
- }
+}
 
- #work {
+#work {
   grid-area: work;
- margin: auto;
- padding: 20px;
- }
+  margin: auto;
+  padding: 20px;
+}
 
- #workGrid {
+#workGrid {
   grid-area: workGrid;
   margin: auto;
   width: 1000px;
@@ -47,9 +99,9 @@
   grid-template-rows: 300px 300px 300px;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
-  "prework prework"
-  "Horiseon challengeThree"
-  "challengeFour challengeFive";
+    "prework prework"
+    "Horiseon challengeThree"
+    "challengeFour challengeFive";
 }
 
 #contact {
@@ -72,6 +124,19 @@
   border-style: ridge;
   border-width: 5px;
   border-color: teal;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+h4,
+.workGridArea p {
+  background: rgb(0, 0, 0, 0.7);
+  width: 50%;
+  padding: 20px 0px;
+  margin: 0px;
+  color: white;
 }
 
 #prework {
@@ -106,77 +171,25 @@
   text-decoration: none;
 }
 
-
-body {
-  margin: auto;
-  padding: 20px;
-  font-family:  Arial, Helvetica, sans-serif
-}
-
-.navBar {
-  background-color: rgb(44, 8, 116);
-  overflow: hidden;
-  margin: auto;
-}
-
-.navigation {
-  display: flex;
-  width: 50%;
-  justify-content: space-evenly;
-  float: right;
-}
-
-.navigation a:hover {
-  color: red;
-}
-
-.navigation a {
-  color: antiquewhite;
-  text-align: center;
-  padding: 50px 30px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-.highlight {
-  float:left;
-  color: floralwhite;
-  font-weight: 700;
-  font-family:sans-serif;    
-  font-size: 40px;
-  background-color: rgb(161, 24, 122);
-  padding: 10px;
-}
-
-h2 {
-  color: floralwhite;
-  font-size: 30px;
-  background-color: navy;
-  padding: 30px;
-  float: right;
-  margin-right: 50px;
-}
-
 h3 {
   font-size: 30px;
   color: navy;
+  text-align: top;
 }
 
-h4, .workGridArea p {
-  background: rgb(0, 0, 0, 0.7);
-    width: 50%;
-    padding: 20px 0px;
-    margin: 0px;
-    color: white;
-}
-
-h4 {
-  font-size: 20px;
-}
-
-.linkedIn, .email, .github {
-  padding: 20px 40px;
+.linkedIn,
+.email,
+.github {
   font-family: Arial, Helvetica, sans-serif;
-  display: flex;
-  justify-content: center;
+  text-decoration: none;
+  color: navy;
+}
+
+.footerLinks {
+ display: flex;
+ text-align: left;
+ justify-content: space-between;
+ align-items: center;
+ margin: 5%;
+ padding: auto;
 }
