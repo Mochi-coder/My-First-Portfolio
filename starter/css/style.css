@@ -218,31 +218,37 @@ h3 {
   padding: 10px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1200px) {
   body {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    background-size: 1400px;
     position: static;
     border: auto;
     width: fit-content;
   }
 
-  header {
-    width:max-content;
+  .navbar {
+    display: flex;
+    flex-direction: row;
     position: static;
     border: auto;
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 480px) {
   body {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    background-size: 600px;
     position: static;
     border: auto;
     width: fit-content;
   }
 
-  header {
-    width: fit-content;
+  .navbar {
+    display: flex;
+    flex-direction: row;
     position: static;
     border: auto;
   }

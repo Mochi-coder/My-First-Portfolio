@@ -10,8 +10,10 @@ As the Front-End Web Developer bootcamp progresses, so will this portfolio.Hopef
 
 This is a current screenshot of my portfolio.
 
-![portfolio-screenshot](https://user-images.githubusercontent.com/116069253/206042550-39390ab1-a436-4349-ae25-6b508ff4af77.png)
+![portfolio-screenshot](https://user-images.githubusercontent.com/116069253/206046997-cecec2e8-872a-4117-ab64-87d6b7ed89dc.png)
 
 On this page you will find links that direct you to my work as well as links to my GitHub and ways to contact me. 
 
-## Link to deployed page
+## Link to deployed application:
+
+https://mochi-coder.github.io/My-First-Portfolio
